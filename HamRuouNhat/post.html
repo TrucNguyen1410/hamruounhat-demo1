@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/post.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Hầm rượu Nhật - Mua rượu Sake chính hãng</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="index.html" class="header__top-link">
+
+                                Hỏi đáp</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Đăng ký</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="#" class="header__logo-link">
+                                <img src="images1/logo.png" alt="Logo" class="header__logo-img" 
+                                style="width: 80px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm tại đây...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon"></i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Gọi điện tư vấn
+                            </div>
+                            <div class="header__call-number">
+                                033.849.3544
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
+                        <div class="header__cart-icon-wrap">
+                            <span class="header__notice">4</span>
+                            <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-link">Trang chủ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="category.html" class="header__nav-link">Danh mục sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="product.html" class="header__nav-link">Sản phẩm</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="post.html" class="header__nav-link">Bài viết</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contact.html" class="header__nav-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!--end header nav -->
+    
+    <!-- posts -->
+    <section class="posts">
+        <div class="container">
+            <div class="row pc">
+                <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+                    <ul class="menu__list">
+
+                      
+                    </ul>
+                </nav>
+<!-- score-top-->
+
+<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+                <div class="breadcrumbs col-lg-12 col-md-12 col-sm-12">
+                    Trang chủ &raquo <span class="breadcrumbs__active">Bài viết</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <article class="post__list col-lg-9 col-md-9 col-sm-12">
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/mienphi-vanchuyen-1.png" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                     Miễn phí vận chuyển nội thành TP.HCM
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Khuyến mãi
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Hầm rượu Nhật
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Miễn phí vận chuyển nội thành TPHCM đơn hàng trên 600,000đ (Không áp dụng Q.7, Q.9, Q.12, Q.Thủ Đức).
+                                Miễn phí vận chuyển nội thành TPHCM đơn hàng trên 300,000đ (Áp dụng cho Q.1, Q.3, Q.4, Q.5, Q.8).
+                                Đơn hàng các Q.7, Q,9, Q.12, Q.Thủ Đức, ngoại thành TPHCM và các tỉnh sẽ được thông báo sau.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/ruou-sake-that-gia.png" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Cách phân biệt sake thật, giả chính xác
+                                    </h2>
+                                </a>  
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Trúc Nguyễn
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Phân biệt rượu sake thật giả không phải là điều dễ dàng, đặc biệt khi thị trường tràn lan hàng nhái. Tuy nhiên, 
+                                với một chút kiến thức, bạn hoàn toàn có thể tự tin lựa chọn cho mình một chai sake chất lượng. Trước hết, hãy ưu tiên mua sắm tại các cửa hàng uy tín,
+                                nơi có đầy đủ giấy tờ chứng minh nguồn gốc sản phẩm. Tiếp theo, hãy quan sát kỹ nhãn mác: một chai sake chính hãng thường có nhãn in sắc nét, thông tin đầy đủ và chính xác. 
+                                Bên cạnh đó, màu sắc và độ trong suốt của rượu cũng là một yếu tố quan trọng. Sake thật thường có màu trong suốt hoặc hơi vàng nhạt, không có cặn. Cuối cùng, 
+                                hãy để ý đến mùi hương và vị của rượu. Sake chính hãng thường có mùi thơm tinh tế, đặc trưng của gạo và men rượu, và hương vị cân bằng, hài hòa. 
+                                Tóm lại, việc kết hợp các yếu tố trên sẽ giúp bạn đưa ra quyết định chính xác khi chọn mua rượu sake.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/ruou-nhat-nen-mua.jpg" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Nên mua loại rượu Nhật nào để làm quà?
+                                    </h2>
+                                </a>
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                       Thanh Thúy
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Nếu bạn đọc đang đắn đo chưa biết chọn gì làm quà biếu tặng cho người thân, bạn bè. 
+                            Tại đây xin giới thiệu một món quà rất bổ dưỡng và tốt cho sức khỏe. Rượu Nhật 
+                            phù hợp cho cả nam và nữ, già trẻ. 
+                            Trong bài viết giới thiệu các loại rượu Nhật làm quà dưới đây,
+                            chúng tôi sẽ giới thiệu một số loại rượu Nhật nên mua làm quà mà bạn có thể tham khảo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__item">
+                        <div class="post__item-img-wrap">
+                            <img src="images1/post/hoan-tien.jpg" class="post__item-img">
+                        </div>
+
+                        <div class="post__item-content">
+                            <div class="post__item-title">
+                                <a href="#" class="post__item-link">
+                                    <h2 class="post__item-heading">
+                                        Hướng dẫn đổi trả hàng, hoàn tiền tại Hầm rượu Nhật 
+                                    </h2>
+                                </a>  
+                            </div>
+
+                            <div class="posts__item-cate-wrap">
+                                <div class="posts__item-cate">
+                                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                                    <div class="posts__item-cate-name">
+                                        Tin tức
+                                    </div>
+                                </div>
+                                <div class="posts__item-cate-ad">
+                                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                                    <div class="posts__item-cate-ad-name">
+                                        Nguyễn Nhung
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="posts__item-description">
+                                Mua hàng ở "Hầm rượu Nhật" nhưng sản phẩm bạn nhận được không giống hình, sản phẩm bị lỗi. Bạn nghĩ mình bị lừa, bạn bối rối không biết
+                                làm thế nào và quyết định search google: “Phải làm gì khi muốn hoàn trả hàng hoàn tiền trên Hầm rượu Nhật”.  Bài viết này sẽ hướng dẫn 
+                                bạn đổi trả sản phẩm bên Hầm rượu Nhật đúng quy trình...
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                    <nav class="post__pagination">
+                      <ul class="post__pagination-list">
+                        <li class="post__pagination-item">
+                          <a class="post__pagination-link" href="#" aria-label="Previous">
+                            <span class="post__pagination-link-prev">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="post__pagination-item post__pagination-item--active">
+                            <a class="post__pagination-link" href="#">1</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">2</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">3</a>
+                        </li>
+                        <li class="post__pagination-item post__pagination-item--center">...</li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">9</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">10</a>
+                        </li>
+                        <li class="post__pagination-item">
+                            <a class="post__pagination-link" href="#">11</a>
+                        </li>
+                        <li class="post__pagination-item">
+                          <a class="post__pagination-link" href="#" aria-label="Next">
+                            <span class="post__pagination-link-next">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </article>
+
+                <aside class="post__aside col-lg-3 col-md-3 col-sm-0">
+                    <div class="post__aside-top">
+                        <div class="post__aside-title">
+                            <h3 class="post__aside-heading">
+                                Bài viết liên quan
+                            </h3>
+
+                            <div class="post__aside-list">
+                                <div class="post__aside-item post__aside-item--no-border">
+                                    <div class="post__aside-img-wrap">
+                                        <img src="images1/post/ruou-sake-that-gia.png" class="post__aside-img">
+                                    </div>
+                                    <div class="post__aside-title">
+                                        <a href="#" class="post__aside-link">
+                                            <h4 class="post__aside-link-heading">Cách phân biệt sake thật, giả chính xác</h4>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="post__aside-item post__aside-item--no-border">
+                                    <div class="post__aside-img-wrap">
+                                        <img src="images1/post/ruou-nhat-nen-mua.jpg" class="post__aside-img">
+                                    </div>
+                                    <div class="post__aside-title">
+                                        <a href="#" class="post__aside-link">
+                                            <h4 class="post__aside-link-heading">Nên mua loại rượu Nhật nào để làm quà?</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__aside-bottom">
+                        <h3 class="post__aside-heading">
+                            Có thể bạn thích
+                        </h3>
+
+                        <div class="post__aside-list">
+                            <div class="post__aside-item post__aside-item--border">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/ruouquatet1-sake-daishichi-shoka-1800ml.png" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Rượu Sake Junmai Daiginjo Daishichi Shoka 1800ml 16% Nhật Bản</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            5.987.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/ruou-mo-choya.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Rượu Mơ Choya Không Cồn 750ml</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                           310.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/ruou-Sake-Vi-Dau.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Rượu Sake Vị Dâu Tsukinoi Strawberry 720ml</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                           260.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/category/ruou-vang-hoa-anh-dao.jpg" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Rượu cánh hoa anh đào Kirakira 500mL</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            520.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/Ruou-Sake-Tsukinoi-Daiginjo-720ml.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Rượu Sake Tsukinoi Daiginjo 720ml</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                          1.500.000đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post__aside-item">
+                                <div class="post__aside-img-wrap">
+                                    <img src="images1/product/ruout3.webp" class="post__aside-img">
+                                </div>
+                                <div class="post__aside-title">
+                                    <a href="#" class="post__aside-link">
+                                        <h4 class="post__aside-link-heading">Rượu Sake Nhật Iwa 5 Assemblage 3 Junmai Daiginjo 15% 720ml</h4>
+                                    </a>
+
+                                    <div class="post__aside-rate-wrap">
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                        <i class="fas fa-star post__aside-rate"></i>
+                                    </div>
+
+                                    <div class="post__aside-price">
+                                        <span class="post__aside-price-current">
+                                            3.200.575đ
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>        </div>
+    </section>
+    <!--end posts -->
+
+    <!-- footer -->
+    <footer>
+        <section class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                        <h4 class="footer__top-intro-heading">
+                            Về chúng tôi
+                        </h4>
+                        <div class="footer__top-intro-content">
+                            Hầm rượu Nhật là thiên đường cho những ai yêu thích rượu vang,
+                            nơi hội tụ những chai rượu tinh túy, đa dạng hương vị từ khắp các vùng của Nhật Bản.
+                            Chúng tôi không ngừng cập nhật những chai rượu mới nhất, chất lượng nhất, mang đến cho
+                            thực khách những trải nghiệm thưởng thức rượu độc đáo và khó quên. <br> <br>
+                            Điện thoại: 033 849 3544 <br>
+                            Email: trucnguyen1410@gmail.com <br>
+                            Zalo:  033.849.3544 <br>
+                        </div>
+                    </article>
+
+                    <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                        <h4 class="footer__top-policy-heading">
+                            Chính sách mua hàng
+                        </h4>
+
+                        <ul class="footer__top-policy-list">
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức đặt hàng</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hình thức thanh toán</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Phương thức vận chuyển</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="footer__top-policy-item">
+                                <a href="#" class="footer__top-policy-link">Hướng dẫn sử dụng</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                        <h4 class="footer__top-contact-heading">
+                            Hotline liên hệ
+                        </h4>
+
+                        <div class="footer__top-contact">
+                            <div class="footer__top-contact-icon">
+                                <img src="images/phone_top.png" class="footer__top-contact-img">
+                            </div>
+
+                            <div class="footer__top-contact-phone-wrap">
+                                <div class="footer__top-contact-phone">
+                                    033.849.3544
+                                </div>
+                                <div class="footer__top-contact-des">
+                                    (Giải đáp thắc mắc 24/24)
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <h4 class="footer__top-contact-heading">
+                            Kết nối với chúng tôi
+                        </h4>
+
+                        <div class="footer__top-contact-social">
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/facebook.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/youtube.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/tiktok.png">
+                            </a>
+                            <a href="#" class="footer__top-contact-social-link">
+                                <img src="images/zalo.png">
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <span class="footer__bottom-content">@Bản quyền thuộc về Trúc Nguyễn | Thiết kế bởi Nguyễn Lê Anh Trúc </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+    <script src="js/jq.js"></script>
+</body>
+</html>

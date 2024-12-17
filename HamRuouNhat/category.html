@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm - Hầm rượu Nhật</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+ <link rel="stylesheet" href="css/category.css">
+ <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Hầm rượu Nhật - Mua rượu Sake chính hãng</span>
+                    </div>
+
+                    <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+
+                                Hỏi đáp</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Hướng dẫn</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Đăng ký</a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="index.html" class="header__logo-link">
+                                <img src="images1/logo.png" alt="Logo" class="header__logo-img" 
+                                style="width: 80px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="categorySelect" class="header__search-select">
+                            <option value="0">All</option>
+                            <option value="1">Rượu trái cây</option>
+                            <option value="2">Rượu Hoa các loại</option>
+                            <option value="3">Quà Rượu Tết</option>
+                            
+                        </select>
+                        <input type="text" id ="productNameSelect"class="header__search-input" placeholder="Tìm kiếm tại đây...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon"></i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+                        <div class="header__call-icon-wrap">
+                            <i class="fas fa-phone-alt header__call-icon"></i>  
+                        </div>
+                        <div class="header__call-info">
+                            <div class="header__call-text">
+                                Gọi điện tư vấn
+                            </div>
+                            <div class="header__call-number">
+                                033.849.3544
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="cart.html" class="col-lg-1 col-md-1 col-sm-0 header__cart">
+                        <div class="header__cart-icon-wrap">
+                            <span class="header__notice">4</span>
+                            <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>   
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Danh mục sản phẩm</div>
+                    </div>
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Hương Trái Cây</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Hương Các Loại Hạt và Hoa</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Hương Vị Ngọt - Sữa</a>
+                            </li>                          
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- category 1: Hương Trái Cây-->
+    <section id ='category1' class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        Hương Trái Cây
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/Ruou-mo-vay-vang-KIKKOMAN.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#"  class="product__panel-link">Rượu mơ vảy vàng KIKKOMAN</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            420.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            340.000đ
+                        </span>
+                    </div>  
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruou-mo-choya.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="p-name product__panel-link">Rượu Mơ Choya Không Cồn 750ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            480.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            310.300đ
+                        </span>
+                    </div> 
+                    <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/Ruou-Yuzu-Cool.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Yuzu Cool Aragoshi Umenoyado Nhật Bản 8% 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide 
+                        ">
+                            1.180.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.040.000đ
+                        </span>
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/Ruou-Tao-Aragoshi.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class=" product__panel-link">Rượu Táo Aragoshi Umenoyado Nhật Bản 7% 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            1.000.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            980.500đ
+                        </span>
+                    </div> 
+                </div>
+                
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                    <img src="images1/product/ruou-Sake-Vi-Dau.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Vị Dâu Tsukinoi Strawberry 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            280.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            260.000đ
+                        </span>
+                    </div> 
+                    <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruou-mo-mat-ong.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="/index.html" class="product__panel-link">Rượu mơ mật ong Nakano Mitsu 12% 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            650.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            590.000đ
+                        </span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category 2: Hương Các Loại Hạt và Hoa-->
+    <section  id ='category2' class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        Hương Các Loại Hạt và Hoa
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/category/ruou-vang-hoa-anh-dao.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu cánh hoa anh đào Kirakira 500mL</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <!-- product__panel-price-old-hide -->
+                        <span class="product__panel-price-old "> 
+                            580.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            520.100đ
+                        </span>
+                    </div>  
+
+                    <div class="product__panel-price-sale-off">
+                        -15%
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/RUOU-JUNMAI-NIGORI-SAYURI.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">RƯỢU JUNMAI NIGORI SAYURI</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            250.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            220.000đ
+                        </span>
+                    </div> 
+                    <div class="product__panel-price-sale-off">
+                        -15%
+                    </div>
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/Ruou-Sake-Sakuragao-Tokubetsu-Junmai-1800ml.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Ruợu Sake Sakuragao Tokubetsu Junmai 1800ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old  ">
+                            1.550.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.339.000đ
+                        </span>
+                    </div>
+                    <div class="product__panel-price-sale-off">
+                        -20%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/category/Ruou-Sake-Honjozo-Genshu-720ml.png" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Honjozo Genshu 720ml - Khoruou Gourmet</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            900.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            870.000đ
+                        </span>
+                    </div> 
+
+                     <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruou-sake-vay-vang.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Vảy Vàng Kinryu No Mai Junkinpakuiri 1,8L</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            800.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            750.000đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/Ruou-Sake-Tsukinoi-Daiginjo-720ml.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Tsukinoi Daiginjo 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            1.689.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.500.000đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -5%
+                    </div>  -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- category 3: QUÀ RƯỢU TẾT-->
+    <section  id ='category3'class="product__love">
+        <div class="container">
+            <div class="row bg-white">
+                <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                    <h2 class="product__love-heading upper">
+                        QUÀ RƯỢU TẾT
+                    </h2>
+                </div>
+            </div>
+            <div class="row bg-white">
+                
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruouquatet1-sake-daishichi-shoka-1800ml.png" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Junmai Daiginjo Daishichi Shoka 1800ml 16% Nhật Bản</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            6.327.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            5.987.000đ
+                        </span>
+                    </div>  
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruoutet2-sake-daishichi-myoka-rangyoku-omega-720ml.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Sake Daishichi Myoka Rangyoku 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                            11.215.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                             9.680.400đ
+                        </span>
+                    </div> 
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruou-2.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake La Isojiman Junmai Daiginjo 16% 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            6.327.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            5.987.000đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -10%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruout3.webp" alt="" class="product__panel-img">
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Nhật Iwa 5 Assemblage 3 Junmai Daiginjo 15% 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            4.988.500đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            3.200.575đ
+                        </span>
+                    </div>
+
+                    <div class="product__panel-price-sale-off">
+                        -15%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/ruou4.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Junmai Daiginjo Daishichi Minowamon 1800ml Nhật Bản</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old ">
+                            5.190.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            4.920.000đ
+                        </span>
+                    </div> 
+
+                    <div class="product__panel-price-sale-off">
+                        -15%
+                    </div> 
+                </div>
+
+                <div class="product__panel-item col-lg-2 col-md-3 col-sm-6">
+                    <div class="product__panel-img-wrap">
+                        <img src="images1/product/Ruou-Sake-Tsukinoi-Daiginjo-720ml.webp" alt="" class="product__panel-img" >
+                    </div>
+                    <h3 class="product__panel-heading">
+                        <a href="#" class="product__panel-link">Rượu Sake Tsukinoi Daiginjo 720ml</a>
+                    </h3>
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                    <div class="product__panel-price">
+                        <span class="product__panel-price-old product__panel-price-old-hide">
+                           1.650.000đ
+                        </span>
+                        <span class="product__panel-price-current">
+                            1.500.000đ
+                        </span>
+                    </div> 
+
+                    <!-- <div class="product__panel-price-sale-off">
+                        -10%
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+            <section class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                            <h4 class="footer__top-intro-heading">
+                                Về chúng tôi
+                            </h4>
+                            <div class="footer__top-intro-content">
+                                Edubook là cửa hàng luôn cung cấp cho các bạn tìm tòi tri thức, đam mê 
+                                đọc sách trên khắp cả nước.Chúng tôi sẽ liên tục cập 
+                                nhật những cuốn sách hay nhất, mới nhất, chất lượng nhất 
+                                giúp người đọc có những cuốn sách hay nhất để đọc! <br> <br>
+                                Điện thoại: 0352 860 701 <br>
+                                Email: teamed2@gmail.com <br>
+                                Zalo:  039.882.3232 <br>
+                            </div>
+                        </article>
+    
+                        <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                            <h4 class="footer__top-policy-heading">
+                                Chính sách mua hàng
+                            </h4>
+    
+                            <ul class="footer__top-policy-list">
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Hình thức đặt hàng</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Hình thức thanh toán</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Phương thức vận chuyển</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Chính sách đổi trả</a>
+                                </li>
+                                <li class="footer__top-policy-item">
+                                    <a href="#" class="footer__top-policy-link">Hướng dẫn sử dụng</a>
+                                </li>
+                            </ul>
+                        </article>
+    
+                        <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                            <h4 class="footer__top-contact-heading">
+                                Hotline liên hệ
+                            </h4>
+    
+                            <div class="footer__top-contact">
+                                <div class="footer__top-contact-icon">
+                                    <img src="images/phone_top.png" class="footer__top-contact-img">
+                                </div>
+    
+                                <div class="footer__top-contact-phone-wrap">
+                                    <div class="footer__top-contact-phone">
+                                        033.849.3544
+                                    </div>
+                                    <div class="footer__top-contact-des">
+                                        (Giải đáp thắc mắc 24/24)
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <h4 class="footer__top-contact-heading">
+                                Kết nối với chúng tôi
+                            </h4>
+    
+                            <div class="footer__top-contact-social">
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/facebook.png">
+                                </a>
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/youtube.png">
+                                </a>
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/tiktok.png">
+                                </a>
+                                <a href="#" class="footer__top-contact-social-link">
+                                    <img src="images/zalo.png">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <span class="footer__bottom-content">@Bản quyền thuộc về Trúc Nguyễn | Thiết kế bởi Nguyễn Lê Anh Trúc </span>
+                    </div>
+                </div>
+            </section>
+    </footer>
+
+    <!-- end footer -->
+    <!-- scroll to top -->
+  <!-- score-top-->
+
+<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></i></button>
+    <!--  -->
+    
+    <script src="js/jq.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>
